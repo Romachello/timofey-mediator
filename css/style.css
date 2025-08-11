@@ -89,3 +89,118 @@
       .block__lead{ font-size:13px; }
     }
     
+/* Галлерея успешных кейсов */
+
+.cases {
+   padding: 40px 20px;
+   background: var(--bg);
+   color: var(--fg);
+ }
+ 
+ .cases__title {
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 20px;
+   text-align: center;
+ }
+ 
+ .cases__grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+ }
+ 
+ .cases__item {
+   background: #fff;
+   border: 1px solid #ccc;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .cases__img {
+   width: 100%;
+   display: block;
+   filter: grayscale(100%);
+   transition: filter 0.3s;
+ }
+ 
+ .cases__img:hover {
+   filter: grayscale(0%);
+ }
+ 
+ .cases__caption {
+   padding: 10px;
+   font-size: 14px;
+   color: var(--muted);
+   text-align: center;
+ } 
+ 
+  /* Как я работаю? */
+  .work-process__steps {
+   position: relative;
+   max-width: 800px;
+   margin: 0 auto;
+   padding-left: 60px; /* было 40px — увеличили отступ */
+ }
+ 
+ .work-process__steps::before {
+   content: "";
+   position: absolute;
+   left: 30px; /* сместили линию чуть правее */
+   top: 0;
+   bottom: 0;
+   width: 2px;
+   background: #ddd;
+ }
+ 
+ .work-process__step {
+   position: relative;
+   margin-bottom: 40px;
+ }
+ 
+ .work-process__number {
+   position: absolute;
+   left: -51px;
+   top: 10px;
+   width: 40px;
+   height: 40px;
+   background: #fff;
+   border: 2px solid #ddd;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+   color: #000;
+   z-index: 1; /* чтобы не перекрывался линией */
+ }
+ 
+ .work-process__content {
+   background: transparent;
+ }
+ 
+ .work-process__heading {
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 5px;
+ }
+ 
+ .work-process__text {
+   font-size: 14px;
+   color: #555;
+ }
+ 
+ /* Адаптив */
+ @media (max-width: 480px) {
+   .work-process__steps {
+     padding-left: 50px;
+   }
+   .work-process__number {
+     left: -42px;
+   }
+   .work-process__heading {
+     font-size: 16px;
+   }
+ }
+ 
