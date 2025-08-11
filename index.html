@@ -1,13 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Услуги медиатора в Санкт-Петербурге и Ленинградской области | Стоимость медиации</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <title>Медиатор — Преимущества / Услуги / Как я работаю / Обо мне / Контакты</title>
    <link rel="stylesheet" href="./css/normalize.css">
    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-   
+
+<body class="site">
+   <div class="site__wrap">
+      <header class="header">
+         <a href="#" class="header__logo">Медиатор - <i>Кунгуров Тимофей</i></a>
+         <nav class="header__nav" role="navigation">
+            <ul class="header__list menu-container" id="menuOverlay">
+               <li><a class="header__link header__link--active" href="#advantages">Преимущества</a></li>
+               <li><a class="header__link" href="#services">Услуги</a></li>
+               <li><a class="header__link" href="#process">Как я работаю</a></li>
+               <li><a class="header__link" href="#about">Обо мне</a></li>
+               <li><a class="header__link" href="#contacts">Контакты</a></li>
+            </ul>
+         </nav>
+         <button class="header__toggle burger-button" id="burgerToggle" aria-label="Открыть меню">
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+            <span class="header__toggle-line"></span>
+         </button>
+      </header>
+
+
+      <!-- 1. Преимущества -->
+      <section id="advantages" class="advantages block_white" aria-labelledby="advantages-title">
+         <div class="block__header">
+            <h2 id="advantages-title" class="block__title">Преимущества</h2>
+            <p class="block__lead">Коротко о том, почему мои услуги работают — гарантия нейтральности,
+               конфиденциальность, быстрые решения.</p>
+         </div>
+
+         <ul class="advantages__list grid--stack" aria-hidden="false">
+            <li class="advantages__item advantages__item--highlight">
+               <div class="advantages__icon">1</div>
+               <h3 class="advantages__title">Нейтральность</h3>
+               <p class="advantages__desc">Полная независимость и объективность в каждой встрече — фокус на интересах
+                  сторон.</p>
+            </li>
+            <li class="advantages__item">
+               <div class="advantages__icon">✓</div>
+               <h3 class="advantages__title">Конфиденциальность</h3>
+               <p class="advantages__desc">Все обсуждения остаются между участниками — юридическая и этическая защита.
+               </p>
+            </li>
+            <li class="advantages__item">
+               <div class="advantages__icon">⏱</div>
+               <h3 class="advantages__title">Эффективность</h3>
+               <p class="advantages__desc">Работа ориентирована на результат: ясные шаги, конкретные соглашения.</p>
+            </li>
+            <li class="advantages__item">
+               <div class="advantages__icon">⚖</div>
+               <h3 class="advantages__title">Опыт</h3>
+               <p class="advantages__desc">Практика в семейных и коммерческих спорах, множество успешных кейсов.</p>
+            </li>
+         </ul>
+      </section>
+
+      <!-- 2. Услуги -->
+      <section id="services" class="services block_black" aria-labelledby="services-title">
+         <div class="block__header">
+            <h2 id="services-title" class="block__title">Услуги</h2>
+            <p class="block__lead">Набор услуг на любом этапе конфликта — от диагностики до сопровождения соглашений.
+            </p>
+         </div>
+
+         <div class="services__grid">
+            <article class="services__card">
+               <h3 class="services__title">Медиация для семей</h3>
+               <ul class="services__features">
+                  <li>Раздел имущества</li>
+                  <li>Вопросы опеки и взаимодействия</li>
+                  <li>Постановка долгосрочных соглашений</li>
+               </ul>
+            </article>
+
+            <article class="services__card">
+               <h3 class="services__title">Корпоративная медиация</h3>
+               <ul class="services__features">
+                  <li>Внутренние конфликты</li>
+                  <li>Договорные споры</li>
+                  <li>Переговоры с партнёрами</li>
+               </ul>
+            </article>
+
+            <article class="services__card">
+               <h3 class="services__title">Коммерческий консалтинг</h3>
+               <ul class="services__features">
+                  <li>Медиация при сделках</li>
+                  <li>Подготовка соглашений</li>
+                  <li>Сопровождение переговоров</li>
+               </ul>
+            </article>
+
+            <article class="services__card">
+               <h3 class="services__title">Онлайн-сессии</h3>
+               <ul class="services__features">
+                  <li>Видеоконференции</li>
+                  <li>Гибкий график</li>
+                  <li>Документирование результатов</li>
+               </ul>
+            </article>
+         </div>
+      </section>
+
+      <!-- 3. Как я работаю -->
+      <section id="process" class="process block_white" aria-labelledby="process-title">
+         <div class="block__header">
+            <h2 id="process-title" class="block__title">Как я работаю</h2>
+            <p class="block__lead">Прозрачный процесс, понятные этапы и соблюдение интересов всех участников.</p>
+         </div>
+
+         <div class="process__steps">
+            <div class="process__step">
+               <span class="process__step-number">1</span>
+               <strong class="process__step-title">Диагностика</strong>
+               <p class="process__step-desc">Короткая встреча для понимания позиций и ожиданий.</p>
+            </div>
+            <div class="process__step">
+               <span class="process__step-number">2</span>
+               <strong class="process__step-title">Сессии</strong>
+               <p class="process__step-desc">Структурированные переговоры с фокусом на решениях.</p>
+            </div>
+            <div class="process__step">
+               <span class="process__step-number">3</span>
+               <strong class="process__step-title">Соглашение</strong>
+               <p class="process__step-desc">Фиксация договорённостей и рекомендации по исполнению.</p>
+            </div>
+         </div>
+      </section>
+
+      <!-- 4. Обо мне -->
+      <section id="about" class="about block_black" aria-labelledby="about-title">
+         <div class="block__header" style="width:100%; margin-bottom:16px;">
+            <h2 id="about-title" class="block__title">Обо мне</h2>
+            <p class="block__lead">Кратко о профессиональном опыте, подходе и ценностях.</p>
+         </div>
+
+         <div class="about__avatar" aria-hidden="true">М</div>
+         <div class="about__bio">
+            <h3 class="about__bio-title">Кунгуров Тимофей Владимирович, медиатор</h3>
+            <p class="about__bio-text">15 лет практики в урегулировании споров, специализация — семейная и корпоративная
+               медиация. Подход: уважение к сторонам, поиск устойчивых решений, минимизация затрат времени и эмоций.</p>
+            <p class="text--muted" style="margin-top:10px;">Сертифицированный медиатор. Проводит тренинги и обучающие
+               программы.</p>
+         </div>
+      </section>
+
+      <!-- 5. Контакты -->
+      <section id="contacts" class="contacts block_white" aria-labelledby="contacts-title">
+         <div>
+            <div class="block__header" style="margin-bottom:12px;">
+               <h2 id="contacts-title" class="block__title">Контакты</h2>
+               <p class="block__lead">Свяжитесь удобным способом — телефон, электронная почта или форма ниже.</p>
+            </div>
+
+            <form class="contacts__form" action="#" method="post" novalidate>
+               <div class="contacts__field">
+                  <label class="contacts__label" for="c-name">Имя</label>
+                  <input id="c-name" class="contacts__input" type="text" name="name" placeholder="Ваше имя">
+               </div>
+
+               <div class="contacts__field">
+                  <label class="contacts__label" for="c-email">Email</label>
+                  <input id="c-email" class="contacts__input" type="email" name="email" placeholder="you@example.com">
+               </div>
+
+               <div class="contacts__field">
+                  <label class="contacts__label" for="c-message">Сообщение</label>
+                  <textarea id="c-message" class="contacts__textarea" name="message"
+                     placeholder="Коротко опишите ваш вопрос"></textarea>
+               </div>
+
+               <button type="submit" class="contacts__btn">Отправить</button>
+            </form>
+         </div>
+
+         <aside class="contacts__info" aria-label="Контактная информация">
+            <div class="contacts__info-item"><strong>Телефон:</strong> +7 (900) 123-45-67</div>
+            <div class="contacts__info-item"><strong>Email:</strong> maria@mediator.example</div>
+            <div class="contacts__info-item"><strong>Город:</strong> Москва, Россия</div>
+            <div class="contacts__info-item text--muted">Работаю онлайн и лично по записи.</div>
+         </aside>
+      </section>
+
+      <footer class="block_black" style="text-align:center; padding:18px 28px;">
+         <div class="text--muted">© 2025 Кунгуров Тимофей — медиатор. Все права защищены.</div>
+      </footer>
+   </div>
+
+   <script>
+
+      const toggle = document.querySelector('.header__toggle');
+      const nav = document.querySelector('.header__nav');
+      const links = document.querySelectorAll('.header__link');
+
+      function closeMenu() {
+         nav.classList.remove('header__nav--open');
+         toggle.classList.remove('header__toggle--active');
+      }
+
+      toggle.addEventListener('click', () => {
+         nav.classList.toggle('header__nav--open');
+         toggle.classList.toggle('header__toggle--active');
+      });
+
+      links.forEach(link => {
+         link.addEventListener('click', () => {
+            if (window.innerWidth <= 900) {
+               closeMenu();
+            }
+         });
+      });
+   </script>
 </body>
+
 </html>
