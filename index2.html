@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <title>3D Gallery — Конверты</title>
+   <style>
+      .envelope-container {
+         perspective: 1000px;
+         /* Добавляет перспективу для 3D эффекта */
+         width: 200px;
+         height: 150px;
+         margin: 50px;
+         position: relative;
+      }
+
+      .envelope {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         transform-style: preserve-3d;
+         /*  Сохраняет 3D-эффект при вращении */
+         transition: transform 0.5s;
+         /* Плавный переход при вращении */
+         cursor: pointer;
+         /* Изменяет курсор при наведении */
+      }
+
+      .envelope:hover {
+         transform: rotateY(180deg);
+         /* Поворот конверта при наведении */
+      }
+
+      .envelope-front,
+      .envelope-back {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         backface-visibility: hidden;
+         /* Скрывает обратную сторону при повороте */
+         border: 1px solid black;
+      }
+
+      .envelope-front {
+         background-color: #f0f0f0;
+         z-index: 2;
+         /* Помещает переднюю часть на передний план */
+      }
+
+      .envelope-back {
+         background-color: #e0e0e0;
+         transform: rotateY(180deg);
+         /* Поворачивает заднюю часть на 180 градусов */
+      }
+
+      .flap {
+         width: 100%;
+         height: 50%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background-color: #d0d0d0;
+         transform-origin: top;
+         /* Устанавливает точку вращения вверху */
+         transform: rotateX(0deg);
+         /* Начальное положение закрытого клапана */
+         transition: transform 0.3s ease-in-out;
+         /* Плавный переход при открытии/закрытии */
+      }
+
+      .envelope:hover .flap {
+         transform: rotateX(-180deg);
+         /* Поворот клапана при наведении */
+      }
+   </style>
+</head>
+
+<body>
+   <div class="envelope-container">
+      <div class="envelope">
+         <div class="envelope-front">
+            <div class="flap"></div>
+         </div>
+         <div class="envelope-back"></div>
+      </div>
+   </div>
+   <script>
+      const envelope = document.querySelector('.envelope');
+
+      envelope.addEventListener('click', () => {
+         envelope.classList.toggle('open');
+      });
+   </script>
+</body>
+
+</html>

@@ -7,6 +7,7 @@
    <title>Медиатор — Преимущества / Услуги / Как я работаю / Обо мне / Контакты</title>
    <link rel="stylesheet" href="./css/normalize.css">
    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/simple-adaptive-slider.css">
 </head>
 
 <body class="site">
@@ -29,7 +30,56 @@
             <span class="header__toggle-line"></span>
          </button>
       </header>
-      <section id="" class="block_black">
+      <section class="slider__block">
+         <!-- Разметка слайдера -->
+         <div class="itcss">
+            <div class="itcss__wrapper">
+               <div class="itcss__items">
+                  <div class="itcss__item">
+                     <div class="slider__item_inner">
+                        <span class="slider__item_title">
+                           Конструктивный диалог для разрешения споров.
+                         </span>
+                        <span class="slider__items_description">
+                           Столкнулись с затяжным конфликтом в бизнесе или отношениях с деловыми партнерами? Нужна ясная стратегия для
+                           сложной ситуации?
+                           Я, Кунгуров Тимофей Владимирович, специализируюсь на содействии сторонам в поиске взаимовыгодных решений и
+                           предоставлении обоснованных рекомендаций для принятия эффективных решений. Моя уникальность - интеграции
+                           нейтрального посредничества (медиации) и глубокого аналитического консультирования. Это позволяет не только
+                           урегулировать текущие разногласия, но и заложить основу для устойчивого взаимодействия и успешной реализации
+                           планов в будущем.
+                        </span>
+                     </div>
+                  </div>
+                  <div class="itcss__item">
+                     <div class="slider__item_inner">
+                        <span class="slider__item_title">
+                           Lorem ipsum dolor
+                        </span>
+                        <span class="slider__items_description">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil quo molestiae
+                           perspiciatis qui vero?
+                        </span>
+                     </div>
+                  </div>
+                  <div class="itcss__item">
+                     <div class="slider__item_inner">
+                        <span class="slider__item_title">
+                           Lorem ipsum dolor
+                        </span>
+                        <span class="slider__items_description">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil quo molestiae
+                           perspiciatis qui vero?
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+            <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
+         </div>
+      </section>
+      <!-- <section id="" class="block_black">
          <h2 class="">Конструктивный диалог для разрешения споров.</h2>
          <p class="block__lead" style="font-size: 16px; color: aliceblue;">
             Столкнулись с затяжным конфликтом в бизнесе или отношениях с деловыми партнерами? Нужна ясная стратегия для
@@ -40,9 +90,11 @@
             урегулировать текущие разногласия, но и заложить основу для устойчивого взаимодействия и успешной реализации
             планов в будущем.
          </p>
-      </section>
+      </section> -->
+      <img class="backround__item" src="./image/backrounds/mramor.jpg">
       <!-- 1. Преимущества -->
       <section id="advantages" class="advantages block_white" aria-labelledby="advantages-title">
+
          <div class="block__header">
             <h2 id="advantages-title" class="block__title">Преимущества</h2>
             <p class="block__lead">Коротко о том, почему мои услуги работают — гарантия нейтральности,
@@ -51,24 +103,28 @@
 
          <ul class="advantages__list grid--stack" aria-hidden="false">
             <li class="advantages__item advantages__item--highlight">
-               <div class="advantages__icon"><img src="./image/icons/icons8-закон-96.png" style="width: 50px; height: 50px;"></div>
+               <div class="advantages__icon"><img src="./image/icons/icons8-закон-96.png"
+                     style="width: 50px; height: 50px;"></div>
                <h3 class="advantages__title">Нейтральность</h3>
                <p class="advantages__desc">Полная независимость и объективность в каждой встрече — фокус на интересах
                   сторон.</p>
             </li>
             <li class="advantages__item">
-               <div class="advantages__icon"><img src="./image/icons/icons8-повестка-в-суд-96.png" style="width: 50px; height: 50px;"></div>
+               <div class="advantages__icon"><img src="./image/icons/icons8-повестка-в-суд-96.png"
+                     style="width: 50px; height: 50px;"></div>
                <h3 class="advantages__title">Конфиденциальность</h3>
                <p class="advantages__desc">Все обсуждения остаются между участниками — юридическая и этическая защита.
                </p>
             </li>
             <li class="advantages__item">
-               <div class="advantages__icon"><img src="./image/icons/icons8-подозреваемый-96.png" style="width: 50px; height: 50px;"></div>
+               <div class="advantages__icon"><img src="./image/icons/icons8-подозреваемый-96.png"
+                     style="width: 50px; height: 50px;"></div>
                <h3 class="advantages__title">Эффективность</h3>
                <p class="advantages__desc">Работа ориентирована на результат: ясные шаги, конкретные соглашения.</p>
             </li>
             <li class="advantages__item">
-               <div class="advantages__icon"><img src="./image/icons/icons8-здание-суда-96.png" style="width: 50px; height: 50px;"></div>
+               <div class="advantages__icon"><img src="./image/icons/icons8-здание-суда-96.png"
+                     style="width: 50px; height: 50px;"></div>
                <h3 class="advantages__title">Опыт</h3>
                <p class="advantages__desc">Практика в семейных и коммерческих спорах, множество успешных кейсов.</p>
             </li>
@@ -123,7 +179,8 @@
       </section>
 
       <!-- 3. Как я работаю -->
-      <section class="work-process" id="work">
+      <section class="work-process" id="work"><img class="backround__item2" src="./image/backrounds/mramor.jpg">
+
          <div class="work-process__wrap">
             <h2 class="work-process__title">Как я работаю?</h2>
             <p class="work-process__subtitle">Процесс состоит из нескольких этапов:</p>
@@ -163,26 +220,26 @@
          </div>
       </section>
 
-
       <!-- 4. Обо мне -->
       <section id="about" class="about block_black" aria-labelledby="about-title">
-         <div class="block__header" style="width:100%; margin-bottom:16px;">
+         <div class="block__header"
+            style="width:100%; margin-bottom:16px; display: flex; flex-direction: column; align-items: center;">
             <h2 id="about-title" class="block__title">Обо мне</h2>
             <p class="block__lead">Кратко о профессиональном опыте, подходе и ценностях.</p>
+            <img class="about__avatar" aria-hidden="true" src="./image/удостоверение.png">
          </div>
 
-         <div class="about__avatar" aria-hidden="true">М</div>
+
          <div class="about__bio">
             <h3 class="about__bio-title">Кунгуров Тимофей Владимирович, медиатор</h3>
-            <p class="about__bio-text"><b>25 лет частной практики.</b> Моя основная функция заключается в содействии разрешению
+            <p class="about__bio-text"><b>25 лет частной практики.</b> Моя основная функция заключается в содействии
+               разрешению
                конфликтов между сторонами посредством переговоров, а также в предоставлении экспертных консультаций по
                широкому кругу вопросов. В рамках переговоров я обеспечиваю нейтральное и беспристрастное посреднечество,
                организую и контролирую процесс структурированного диалога между сторонами. Моя задача - создать
                безопасные условия для коммуникации, способствовать взаимопониманию и выявлению интересов сторон для
                достижения ими взаимоприемлемого соглашения. Я строго соблюдаю принципы конфиденциальности и
                нейтралитета, не навязывая собственных решений.</p>
-            <p class="text--muted" style="margin-top:10px;">Сертифицированный медиатор. Проводит тренинги и обучающие
-               программы.</p>
          </div>
       </section>
       <section class="cases" id="cases">
@@ -219,6 +276,7 @@
 
       <!-- 5. Контакты -->
       <section id="contacts" class="contacts block_white" aria-labelledby="contacts-title">
+         <div class="backround__item"></div>
          <div>
             <div class="block__header" style="margin-bottom:12px;">
                <h2 id="contacts-title" class="block__title">Контакты</h2>
@@ -254,13 +312,27 @@
          </aside>
       </section>
 
-      <footer class="block_black" style="text-align:center; padding:18px 28px;">
+      <footer class="footer block_black" style="text-align:center; padding:18px 28px;">
          <div class="text--muted">© 2025 Кунгуров Тимофей — медиатор. Все права защищены.</div>
       </footer>
    </div>
+   <script src="./js/simple-adaptive-slider.min.js"></script>
+   <script defer>
 
+      document.addEventListener('DOMContentLoaded', () => {
+         // активация слайдера
+         new ItcSimpleSlider('.itcss', {
+            loop: false,
+            autoplay: true,
+            swipe: true,
+            onInit(slider) {
+               console.log(this);
+            }
+         });
+      });
+
+   </script>
    <script>
-
       const toggle = document.querySelector('.header__toggle');
       const nav = document.querySelector('.header__nav');
       const links = document.querySelectorAll('.header__link');
